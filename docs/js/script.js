@@ -98,14 +98,16 @@ $(window).on("load", function () {
 const button = document.querySelector('.btn.btn-primary.w-100');
 
 // Listen for button click event
-button.addEventListener('click', function() {
-    // Get the form element
-    const form = document.querySelector('#mainForm');
-    // Get all the form inputs
-    const formData = new FormData(form);
+// button.addEventListener('click', function(e) {
+//   e.preventDefault();
+//   // Get the form element
+//   const form = document.querySelector('#mainForm');
+//   // Get all the form inputs
+//   const formData = new FormData(form);
 
-    // Loop through the form data and print the values to the console
-    for (const [key, value] of formData.entries()) {
-        console.log(key + ': ' + value);
-    }
-});
+//   // Loop through the form data and print the values to the console
+//   for (const [key, value] of formData.entries()) {
+//       console.log(key + ': ' + value);
+//   }
+//   alert("Info sent, we will reach out to you in the next 24-48 hours.");
+// });
